@@ -10,7 +10,7 @@
             echo "Null username/password/email";
         }
         else{
-            $status = editUser($_SESSION['update_id'], $username, $password, $email);
+            $status = updateUser($_SESSION['update_id'], $username, $password, $email);
             if($status){
                 header('location: ../view/userlist.php');
                 unset($_SESSION['update_id']);
