@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
+}
+
+/* Table Styles */
+#create-blog {
+    width: 50%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Prevent it from becoming too wide */
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-spacing: 0; /* Remove spacing between table cells */
+}
+
+/* Header Styles */
+#create-blog th {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+    font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    resize: vertical; /* Allow resizing vertically for textarea */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Description Styles */
+#write-blog {
+    height: 150px; /* Adjust initial height for better usability */
+}
+
+/* Alignments */
+td {
+    padding: 15px; /* Add consistent padding inside table cells */
+    text-align: left; /* Align text to the left */
+}
+
+td p {
+    margin: 0 0 10px 0; /* Add spacing between paragraphs and elements */
+}
+
+/* Center Footer Link */
+#create-blog tr:last-child td {
+    text-align: center; /* Center align the "Go to Back" link */
+}

@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Menu and Profile */
+#container {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    margin: 30px;
+}
+
+/* Menu Section */
+#menu {
+    margin-right: 100px;
+    width: 250px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+#menu h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#menu a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #7bbd67;
+}
+
+/* Profile Table */
+#profile-table {
+    width: 1219px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    left: 250px; 
+    top: -30px;
+    
+}
+
+#profile-table td {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#profile-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Profile Header */
+#profile-header {
+    text-align: center;
+    background-color: rgb(66, 82, 99);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+#profile-header strong {
+    font-size: 20px;
+}
+
+/* Profile Picture */
+img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Profile Name */
+#profile-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+/* Profile Section Titles */
+td strong {
+    color: #4CAF50;
+}
+
+/* Footer Style */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}

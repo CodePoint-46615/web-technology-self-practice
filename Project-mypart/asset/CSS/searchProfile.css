@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1faff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+/* Table Styles */
+#profile-table {
+    width: 500px; /* Adjust table width */
+    height: auto; /* Allow the table to grow with content */
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Row Styles */
+#profile-header td {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #3e8e41;
+}
+
+/* Profile Picture Row Styles */
+#profile-picture-row td {
+    text-align: center;
+    padding: 20px;
+}
+
+#profile-picture-row img {
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+#profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Title Row Styles */
+#profile-title-row {
+    background-color: #f9f9f9;
+}
+
+#profile-title-row h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 0;
+}
+
+/* Data Rows */
+tr[id$="-row"] td {
+    padding: 15px;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+tr[id$="-row"]:last-child td {
+    border-bottom: none;
+}
+
+/* First Column Styling (Labels) */
+tr[id$="-row"] td:first-child {
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: left;
+}
+
+/* Second Column Styling (Values) */
+tr[id$="-row"] td:last-child {
+    text-align: left;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #profile-table {
+        width: 90%; /* Adjust table width for smaller screens */
+    }
+
+    #profile-header td, 
+    #profile-title-row h2 {
+        font-size: 1.2em;
+    }
+
+    tr[id$="-row"] td {
+        font-size: 0.9em;
+    }
+}

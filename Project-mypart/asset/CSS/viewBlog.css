@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Main Title */
+#main-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4CAF50;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Search Section */
+#search-section {
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+#search-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Table */
+#blog-table,
+#write-blog-table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#blog-table-header th,
+#create-blog-title {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#blog-table th,
+#blog-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+#dynamic-blog-entry td {
+    font-size: 0.9em;
+}
+
+/* Advisor-specific Section */
+#create-blog-row {
+    background-color: #f9f9f9;
+}
+
+#create-blog-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#advisor-note {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+#create-blog-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#create-blog-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#create-blog-button:hover {
+    background-color: #45a049;
+}
+
+/* Profile Link */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Latest Blog Title */
+#latest-blog-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+}

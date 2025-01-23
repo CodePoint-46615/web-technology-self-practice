@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Title */
+#main-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Section Title */
+#latest-blog-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* Center and Style the Table */
+#blog-table {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Styles */
+#blog-table-header th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3e8e41;
+}
+
+/* Table Cell Styles */
+#blog-table td {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#blog-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#blog-table tr:hover {
+    background-color: #f1faff;
+}
+
+/* Profile Link */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #388e3c;
+}

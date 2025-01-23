@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the header */
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#search-btn:hover {
+    background-color: #45a049;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* No users found row */
+td[colspan="4"] {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #999;
+}
+
+/* Link Styles */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Centered Profile Link */
+div {
+    text-align: center;
+    margin: 20px;
+}
