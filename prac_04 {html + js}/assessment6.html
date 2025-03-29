@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function validateBloodGroup(){
+            let blood_group = document.getElementById('user_bg').value;
+            let msg = document.getElementById('errorMsg');
+            
+            if(blood_group === 'select'){
+                msg.textContent = "Blood group is needed";
+                msg.style.color = "red";
+                return false; 
+            }
+            else{
+                alert("Submitted Blood Group");
+                return true; 
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form action="" onsubmit="return validateBloodGroup();">
+        <table border="0" align="left" width="400" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    Blood Group
+                </td>
+
+                <td>
+                    <select name="user_bg" id="user_bg">
+                        <option value="select">Select One</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </td>
+
+                <td>
+                    <span id="errorMsg"></span>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+</html>
