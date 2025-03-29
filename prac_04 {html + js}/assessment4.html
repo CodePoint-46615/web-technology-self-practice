@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoB Validation</title>
+
+    <script>
+        //validate digit
+        function isAllDigits(str) {
+            return [...str].every(char => char >= "0" && char <= "9");
+        }
+
+        //validate year
+        function isLeapYear(year){
+            return ((year % 400 === 0 || year % 100 != 0) && year % 4 === 0); 
+        }
+
+        //validate date
+        function isDate(str, month, year) {
+            let num = Number(str);
+            if(month == 2){
+                if(isLeapYear(year)){
+                    return num >=1 && num <= 29;
+                }
+                else{
+                    return num >= 1 && num <= 28;
+                }
+            }
+            return num >= 1 && num <= 31;
+        }
+
+        //validate month
+        function isMonth(str) {
+            let num = Number(str);
+            return num >= 1 && num <= 12;
+        }
+
+        //validate year
+        function isYear(str) {
+            let num = Number(str);
+            return num >= 1900 && num <= 2016;
+        }
+        
+        function validateDoB(){
+            let date = document.getElementById("day").value.trim();
+            let date_msg = document.getElementById("dayError");
+
+            let month = document.getElementById("month").value.trim();
+            let month_msg = document.getElementById("monthError");
+            
+            let year = document.getElementById("year").value.trim(); 
+            let year_msg = document.getElementById("yearError");
+
+            let isValid = true; 
+
+            //date 
+            if(!date || !isAllDigits(date) || !isDate(date, month, year)){
+                 date_msg.textContent = "Invalid";
+                 date_msg.style.color = "red"; 
+                 isValid = false; 
+            }
+            else{
+                date_msg.textContent = "Valid";
+                date_msg.style.color = "green";
+            }
+
+            //month
+            if(!month || !isAllDigits(month) || !isMonth(month)){
+                 month_msg.textContent = "Invalid";
+                 month_msg.style.color = "red"; 
+                 isValid = false; 
+            }
+            else{
+                month_msg.textContent = "Valid";
+                month_msg.style.color = "green";
+            }
+
+            //year
+            if(!year || !isAllDigits(year)|| !isYear(year)){
+                 year_msg.textContent = "Invalid";
+                 year_msg.style.color = "red"; 
+                 isValid = false; 
+            }
+            else{
+                year_msg.textContent = "Valid";
+                year_msg.style.color = "green";
+            }
+
+            return isValid; 
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="return validateDoB()">
+        <fieldset>
+            <legend>Date of Birth</legend>
+            <table id="dob_table" align="left" border="0" cellspacing="0" cellpadding="15">
+                <tr>
+                    <td align="center">
+                        dd<br>
+                        <strong style="color:red;">dd: 0-31</strong>
+                    </td>
+                    <td align="center">
+                        mm<br>
+                        <strong style="color:green;">mm: 1-12</strong>
+                    </td>
+                    <td align="center">
+                        yyyy<br>
+                        <strong style="color:blueviolet;">yyyy: 1900-2016</strong>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" id="day" name="day" value="" onkeyup="validateDoB()" />
+                        <span id="dayError"></span>
+                    </td>
+                    
+                    <td>
+                        <input type="text" id="month" name="month" value="" onkeyup="validateDoB()" />
+                        <span id="monthError"></span>
+                    </td>
+                    
+                    <td>
+                        <input type="text" id="year" name="year" value="" onkeyup="validateDoB()" />
+                        <span id="yearError"><span></span>
+                    </td>
+                    
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
